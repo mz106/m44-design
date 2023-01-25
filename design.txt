@@ -1,0 +1,52 @@
+What do we want to achieve?
+
+Make a BE user signup and login
+
+What do we want a user to be able to do? / Features
+
+1. Signup 
+2. login
+
+User info
+
+1. Signup
+    username
+    email address
+    password
+
+2. login
+    username
+    password
+
+Data
+
+User on DB:
+    id: integer
+    username: string
+    email: string
+    password: string
+    timestamp: date obj
+
+Input User:
+    username: string
+    email: string
+    password: string
+
+ReturnedUser:
+    id: integer
+    username: string
+    email address: string
+    jwt: string
+
+UserExists:
+    message: string -- "User already exists"
+
+UserCreated:
+    message: string -- "success"
+    newUser: ReturnedUser
+
+Routes
+
+user/createUser, data required: InputUser, returnedData: ReturnedUser, http verb: post  
+
+
